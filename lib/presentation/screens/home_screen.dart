@@ -19,17 +19,25 @@ class HomeBody extends StatelessWidget {
 
     const List<IconData> items = [Icons.people, Icons.replay, Icons.list_alt];
 
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        const Text("Boozy"),
-        const Text("Esot ilin rodador"),
-        ElevatedButton(onPressed: () {}, child: const Text("¡Jugar!")),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: items.map((i) => IconButton(onPressed: () {}, icon: Icon(i))).toList(),
-        )
-      ],
+    return Container(
+      decoration: const BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage('/images/bg.jpg'),
+          fit: BoxFit.cover,
+        ),
+      ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Text("Boozy"),
+          const Text("Esot ilin rodador"),
+          ElevatedButton(onPressed: () {}, child: const Text("¡Jugar!")),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: items.map((i) => IconButton(onPressed: () {}, icon: Icon(i))).toList(),
+          )
+        ],
+      ),
     );
   }
 }
