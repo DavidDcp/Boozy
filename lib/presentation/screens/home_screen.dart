@@ -30,8 +30,9 @@ class HomeBody extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Text("Boozy"),
-          const Text("Esot ilin rodador"),
-          ElevatedButton(onPressed: () {}, child: const Text("¡Jugar!")),
+          const Text("La Ruleta del Atrevimiento ha llegado !"),
+          const Text("Gira y desafía los límites !"),
+          ElevatedButton(onPressed: () {}, child: const Text("Jugar")),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: items.map((i) => IconButton(onPressed: () {}, icon: Icon(i))).toList(),
