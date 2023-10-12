@@ -1,4 +1,5 @@
 import 'package:boozy/presentation/screens/home_screen.dart';
+import 'package:boozy/presentation/screens/usuarios_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      home: const UsuariosInicio(),
     );
   }
 }
