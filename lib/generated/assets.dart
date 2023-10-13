@@ -2,7 +2,8 @@
 class Assets {
   Assets._();
 
-  static const String imagesBg = 'assets/images/bg.jpg';
+  static const String imagesInicio = 'assets/images/Inicio.jpg';
+  static const String imagesRestoApp = 'assets/images/RestoApp.jpg';
   static const String tipografiasMontserratBlack = 'assets/tipografias/Montserrat-Black.ttf';
   static const String tipografiasMontserratBlackItalic = 'assets/tipografias/Montserrat-BlackItalic.ttf';
   static const String tipografiasMontserratBold = 'assets/tipografias/Montserrat-Bold.ttf';
