@@ -21,7 +21,7 @@ class UserBody extends StatelessWidget {
     return Container(
       decoration: const BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('/images/bg.jpg'),
+          image: AssetImage('/images/RestoApp.jpg'),
           fit: BoxFit.cover,
         ),
       ),

@@ -22,7 +22,7 @@ class HomeBody extends StatelessWidget {
     return Container(
       decoration: const BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('/images/bg.jpg'),
+          image: AssetImage('/images/Inicio.jpg'),
           fit: BoxFit.cover,
         ),
       ),
