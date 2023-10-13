@@ -22,7 +22,7 @@ class HomeBody extends StatelessWidget {
     return Container(
       decoration: const BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('/images/bg.jpg'),
+          image: AssetImage('/images/Inicio.jpg'),
           fit: BoxFit.cover,
         ),
       ),
@@ -31,7 +31,7 @@ class HomeBody extends StatelessWidget {
         children: [
           Text(
             "¡La Ruleta del Atrevimiento ha llegado Gira y desafía los límites!",
-            style: TextStyle(fontFamily: 'Monteserrat', fontSize: 18.0, fontWeight: FontWeight.normal, color: Colors.white), textAlign: TextAlign.center,
+            style: TextStyle(fontFamily: 'Montserrat', fontSize: 18.0, fontWeight: FontWeight.normal, color: Colors.white), textAlign: TextAlign.center,
           ),
           Text(
             "Boozy",
