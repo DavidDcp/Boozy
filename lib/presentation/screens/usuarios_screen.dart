@@ -32,7 +32,7 @@ class UserBody extends StatelessWidget {
             children: items.map((i) =>
                 IconButton(onPressed: () {}, icon: Icon(i))).toList(),
           ),
-          const Text("JUGADORES"),
+          const Text("JUGADOREs"),
           Container(
             child: const Text(" Lista de jugadores"),
             height: 300,
