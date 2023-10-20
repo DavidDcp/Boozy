@@ -10,7 +10,6 @@ class UsuariosInicio extends StatelessWidget {
     );
   }
 }
-
 class UserBody extends StatelessWidget {
   const UserBody({super.key});
 
@@ -35,14 +34,24 @@ class UserBody extends StatelessWidget {
           ),
           const Text("JUGADORES"),
           Container(
-            child: const Text("LIsta de jugadores"),
+            child: const Text(" Lista de jugadores"),
             height: 300,
-            //width: 300,
-          ),
-          ElevatedButton(onPressed: () {}, child: const Text("Empezar")),
+            width: 350,
 
+          decoration: BoxDecoration(
+          color: Colors.lightBlueAccent,
+
+          borderRadius: BorderRadius.circular(20),
+          ),
+          ),
+          SizedBox(height: 20),
+          ElevatedButton(onPressed: () {}, child: const Text("Empezar")),
         ],
       ),
     );
   }
 }
+
+
+
+
