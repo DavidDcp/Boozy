@@ -1,55 +1,96 @@
+
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
+  static String name = "home_screen";
+
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: HomeBody(),
+    return Scaffold(
+      body: Container(
+        decoration: const BoxDecoration(
+          /*gradient: LinearGradient(
+            colors: [
+              AppColors.aqua,
+              AppColors.aqua,
+              AppColors.blue,
+              AppColors.purple,
+              AppColors.purple,
+            ],
+            stops: [0.0, 0.1, 0.5, 0.9, 1.0],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          )*/
+        ),
+        child: const _HomeBody(),
+      ),
     );
   }
 }
 
-class HomeBody extends StatelessWidget {
-  const HomeBody({super.key});
+class _HomeBody extends StatelessWidget {
+  const _HomeBody();
 
   @override
   Widget build(BuildContext context) {
-
-    const List<IconData> items = [Icons.people, Icons.replay, Icons.list_alt];
-
-    return Container(
-      decoration: const BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage('/images/Inicio.jpg'),
-          fit: BoxFit.cover,
-        ),
-      ),
+    return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisSize: MainAxisSize.min,
         children: [
-          Text(
-            "¡La Ruleta del Atrevimiento ha llegado Gira y desafía los límites!",
-            style: TextStyle(fontFamily: 'Montserrat', fontSize: 18.0, fontWeight: FontWeight.normal, color: Colors.white), textAlign: TextAlign.center,
-          ),
-          Text(
-            "Boozy",
-            style: TextStyle(fontFamily: 'Righteous', fontSize: 50, fontWeight: FontWeight.normal, color: Colors.white), textAlign: TextAlign.center,
-          ),
-          ElevatedButton(
-            onPressed: () {},
-            child: Text(
-              "Jugar",
-              style: TextStyle(fontFamily: 'Righteous', fontSize: 18.0, fontWeight: FontWeight.bold, color: Colors.purple),
+          /*FadeIn(
+            delay: const Duration(milliseconds: 4500),
+            duration: const Duration(milliseconds: 1500),
+            child: ShakeX(
+              infinite: true,
+              delay: const Duration(milliseconds: 500),
+              duration: const Duration(seconds: 5),
+              child: SizedBox(
+                width: 300,
+                child: Text(
+                  "¡La Ruleta del Atrevimiento ha llegado! Gira y desafía los límites!",
+                  //style: GoogleFonts.montserrat(
+                   // fontSize: 15,
+                   // fontWeight: FontWeight.bold,
+                  //),
+                  textAlign: TextAlign.center,
+                ),
+              ),
             ),
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: items.map((i) => IconButton(onPressed: () {}, icon: Icon(i))).toList(),
-          )
+          ),*/
+          //const Logo(isAnimated: true, size: TitleLetterSizes.lg),
+          const SizedBox(height: 20),
+          /*JelloIn(
+            delay: const Duration(milliseconds: 3500),
+            duration: const Duration(milliseconds: 1500),
+            child: Pulse(
+              duration: const Duration(seconds: 3),
+              infinite: true,
+              child: AppButton(
+                onPressed: () {
+                  context.push("/rules");
+                },
+                child: SizedBox(
+                  width: 140,
+                  child: Text(
+                    "JUGAR",
+                    style: GoogleFonts.montserrat(
+                      //color: AppColors.blue,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
+            ),
+          )*/
         ],
       ),
     );
   }
 }
+
