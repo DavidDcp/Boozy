@@ -139,7 +139,7 @@ class InscriptionScreenState extends ConsumerState<InscriptionScreen> {
                             inscriptionTextFields.length ~/ 2,
                           ),
                         ),
-                        const SizedBox(width: 10),
+                        const SizedBox(width: 12),
                         Column(
                           children: inscriptionTextFields.sublist(
                             inscriptionTextFields.length ~/ 2,
