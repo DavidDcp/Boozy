@@ -124,7 +124,7 @@ class InscriptionScreenState extends ConsumerState<InscriptionScreen> {
                       "JUGADORES",
                       style: GoogleFonts.montserrat(
                         color: Colors.white,
-                        fontWeight: FontWeight.w500,
+                        fontWeight: FontWeight.bold,
                         fontSize: 16,
                       ),
                     ),
