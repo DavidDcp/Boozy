@@ -31,7 +31,7 @@ class InscriptionScreenState extends ConsumerState<InscriptionScreen> {
         formValues[fieldKey] = "";
 
         return InscriptionTextField(
-          width: 150,
+          width: 130,
           index: index + 1,
           onChanged: (player) {
             if (player.trim().isNotEmpty) {
@@ -124,11 +124,11 @@ class InscriptionScreenState extends ConsumerState<InscriptionScreen> {
                       "JUGADORES",
                       style: GoogleFonts.montserrat(
                         color: Colors.white,
-                        fontWeight: FontWeight.bold,
+                        fontWeight: FontWeight.w500,
                         fontSize: 16,
                       ),
                     ),
-                    const SizedBox(height: 20),
+                    const SizedBox(height: 20,),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       mainAxisSize: MainAxisSize.min,
@@ -139,7 +139,7 @@ class InscriptionScreenState extends ConsumerState<InscriptionScreen> {
                             inscriptionTextFields.length ~/ 2,
                           ),
                         ),
-                        const SizedBox(width: 20),
+                        const SizedBox(width: 10),
                         Column(
                           children: inscriptionTextFields.sublist(
                             inscriptionTextFields.length ~/ 2,
